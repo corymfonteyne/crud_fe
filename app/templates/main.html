@@ -1,0 +1,14 @@
+{% extends 'base.html' %]}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<h1>Data Types</h1>
+<ul>
+    {% for dt in data types %}
+        <li>{{ dt["name"] }} - {{ dt["summary"] }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
