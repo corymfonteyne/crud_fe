@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block title %}New Data Type{% endblock title %}
+
+{% block content %}
+<h1>New Data Type</h1>
+<form action="{{ url_for('create_data_type') }}" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="summary">Summary</label>
+    <input type="text" id="summary" name="summary">
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description">
+    <input type="submit" value="create">
+</form>
+{% endblock content %}
